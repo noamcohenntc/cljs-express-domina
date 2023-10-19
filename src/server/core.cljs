@@ -4,9 +4,8 @@
 (node/enable-util-print!)
 
 (def express (node/require "express"))
-(def app (express))
 (defn -main []
-  (let [port 3000]
+  (let [port 3000 app (express)]
     (doto app
       (.set "view engine" "pug")
       (.set "views" "build/views")
