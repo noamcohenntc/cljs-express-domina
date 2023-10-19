@@ -5,7 +5,7 @@
 
 (def express (node/require "express"))
 (defn -main []
-  (let [port 3000 app (express)]
+  (let [[port app] [3000 (express)]]
     (doto app
       (.set "view engine" "pug")
       (.set "views" "build/views")
