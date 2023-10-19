@@ -6,13 +6,14 @@
 (def express (node/require "express"))
 (def app (express))
 (defn -main []
-  (doto app
-    (.set "view engine" "pug")
-    (.set "views" "build/views")
-    (.use (.static express "build/public"))
-    (.get "/" (fn [req res]
-                (.render res "index" (clj->js {:title "Welcome!" :message "Hello World!"}))))
-    (.listen 3000 (fn []
-                     (println "localhost:3000")))))
+  (let [port 3000]
+    (doto app
+      (.set "view engine" "pug")
+      (.set "views" "build/views")
+      (.use (.static express "build/public"))
+      (.get "/" (fn [req res]
+                  (.render res "index" (clj->js {:title "Welcome!" :message "Hello World!"}))))
+      (.listen port (fn []
+                       (println "localhost:" port))))))
 
 (set! *main-cli-fn* -main)
