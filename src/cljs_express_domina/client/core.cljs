@@ -1,4 +1,4 @@
-(ns client.core
+(ns cljs_express_domina.client.core
   (:require [clojure.browser.repl :as repl]
             [domina :as dom]
             [domina.events :as ev]))

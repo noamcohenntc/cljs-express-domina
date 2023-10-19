@@ -1,4 +1,4 @@
-(ns server.core
+(ns cljs_express_domina.server.core
   (:require [cljs.nodejs :as node]))
 
 (node/enable-util-print!)

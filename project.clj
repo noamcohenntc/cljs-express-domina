@@ -71,7 +71,7 @@
                   ["vcs" "push"]]
 
   :cljsbuild {:builds [{:id "server"
-                        :source-paths ["src/server"]
+                        :source-paths ["src/cljs_express_domina/server"]
                         :compiler {:output-to "build/server/main.js"
                                    :output-dir "build/server/js"
                                    :optimizations :simple
@@ -79,7 +79,7 @@
                                    :pretty-print false
                                    :source-map "build/server/main.js.map"}}
                        {:id "client"
-                        :source-paths ["src/client"]
+                        :source-paths ["src/cljs_express_domina/client"]
                         :compiler {:output-to "build/public/js/main.js"
                                    :output-dir "build/public/js/js"
                                    :optimizations :advanced

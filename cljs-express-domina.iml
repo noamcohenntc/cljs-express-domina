@@ -12,8 +12,8 @@
       <sourceFolder url="file://$MODULE_DIR$/dev-resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/client" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/server" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/cljs_express_domina/client" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/cljs_express_domina/server" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
       <excludeFolder url="file://$MODULE_DIR$/build/public/js" />
