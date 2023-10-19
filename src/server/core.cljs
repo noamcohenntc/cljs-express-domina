@@ -12,7 +12,7 @@
     (.use (.static express "build/public"))
     (.get "/" (fn [req res]
                 (.render res "index" (clj->js {:title "Welcome!" :message "Hello World!"}))))
-    (.listen 3000))
-  (println "localhost:3000"))
+    (.listen 3000 (fn []
+                     (println "localhost:3000")))))
 
 (set! *main-cli-fn* -main)

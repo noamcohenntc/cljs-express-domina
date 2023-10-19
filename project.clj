@@ -76,7 +76,7 @@
                                    :output-dir "build/server/js"
                                    :optimizations :simple
                                    :target :nodejs
-                                   :pretty-print true
+                                   :pretty-print false
                                    :source-map "build/server/main.js.map"}}
                        {:id "client"
                         :source-paths ["src/client"]
