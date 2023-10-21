@@ -49,7 +49,7 @@
                                   }]]
              }
 
-  :aliases {"build" [["cljsbuild" "auto" "server" "client"]]
+  :aliases {"build" [["cljsbuild" "once" "server" "client"]]
             "test" ["doo" "node" "test-node" "once"]
             "test-auto" ["doo" "node" "test-node" "auto"]}
 
